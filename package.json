@@ -1,0 +1,13 @@
+{
+  "name": "gestionate",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

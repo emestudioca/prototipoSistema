@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 97%;
+    --foreground: 222 30% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 222 30% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 30% 12%;
+    --primary: 235 55% 58%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 14% 93%;
+    --secondary-foreground: 222 30% 16%;
+    --muted: 220 16% 95%;
+    --muted-foreground: 218 12% 46%;
+    --accent: 220 14% 93%;
+    --accent-foreground: 222 30% 16%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 13% 88%;
+    --input: 220 13% 86%;
+    --ring: 235 55% 58%;
+    --radius: 0.6rem;
+  }
+
+  html.dark {
+    --background: 226 22% 7%;
+    --foreground: 220 25% 92%;
+    --card: 227 20% 10%;
+    --card-foreground: 220 25% 92%;
+    --popover: 227 20% 12%;
+    --popover-foreground: 220 25% 92%;
+    --primary: 235 70% 68%;
+    --primary-foreground: 227 22% 7%;
+    --secondary: 226 16% 15%;
+    --secondary-foreground: 220 25% 90%;
+    --muted: 226 18% 13%;
+    --muted-foreground: 220 10% 60%;
+    --accent: 226 16% 16%;
+    --accent-foreground: 220 25% 90%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 226 16% 18%;
+    --input: 226 16% 18%;
+    --ring: 235 70% 68%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", "Inter", ui-sans-serif, system-ui, sans-serif;
+    letter-spacing: -0.01em;
+    font-weight: 600;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Thin, subtle scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Focus ring refinement */
+:focus-visible {
+  outline: 2px solid hsl(var(--ring));
+  outline-offset: 1px;
+}
+
+/* App brand mark */
+.brand-mark {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary) / 75%));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}

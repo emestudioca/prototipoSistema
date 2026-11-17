@@ -1,0 +1,20 @@
+{
+  "name": "@gestionate/pos",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./client": { "types": "./src/client/index.ts", "default": "./src/client/index.ts" }
+  },
+  "dependencies": {
+    "@gestionate/core": "*",
+    "@gestionate/products": "*",
+    "@gestionate/sales": "*",
+    "lucide-react": "^1.46.0",
+    "react": "^19.1.0",
+    "react-router-dom": "^7.6.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.6",
+    "typescript": "^5.8.3"
+  }
+}

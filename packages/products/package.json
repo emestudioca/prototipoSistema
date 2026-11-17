@@ -1,0 +1,27 @@
+{
+  "name": "@gestionate/products",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    "./server": { "types": "./src/server/index.ts", "default": "./src/server/index.ts" },
+    "./client": { "types": "./src/client/index.ts", "default": "./src/client/index.ts" }
+  },
+  "dependencies": {
+    "@gestionate/categories": "*",
+    "@gestionate/core": "*",
+    "@gestionate/settings": "*",
+    "lucide-react": "^1.46.0",
+    "mongoose": "^8.16.1",
+    "next": "^15.3.4",
+    "react": "^19.1.0",
+    "react-router-dom": "^7.6.1",
+    "xlsx": "^0.18.5",
+    "jspdf": "^4.2.1",
+    "jspdf-autotable": "^5.0.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.23",
+    "@types/react": "^19.1.6",
+    "typescript": "^5.8.3"
+  }
+}

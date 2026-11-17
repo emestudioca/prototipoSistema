@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 216 64" font-family="Space Grotesk, -apple-system, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="og" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="48" height="48" rx="11" fill="url(#og)"/>
+  <circle cx="32" cy="31.25" r="7.8" fill="#ffffff"/>
+  <ellipse cx="32" cy="31.25" rx="18.9" ry="6.3" fill="none" stroke="#ffffff" stroke-width="3.6" transform="rotate(-22 32 31.25)"/>
+  <circle cx="49.55" cy="24.2" r="2.4" fill="#ffffff"/>
+  <text x="70" y="42" font-size="30" font-weight="700" letter-spacing="-0.5" fill="#18181b" transform="translate(0 -3)">Órbita</text>
+</svg>
